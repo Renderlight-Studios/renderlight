@@ -1,3 +1,2 @@
 # renderlightweb
-webby
-like little baby
+The official website for RenderLight Studios
