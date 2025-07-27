@@ -10,48 +10,65 @@
       scroll-behavior: smooth;
     }
 
+    .angled {
+      clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+    }
   </style>
 </head>
-<body class="bg-zinc-900 text-white font-sans">
-  <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center text-center px-6">
-    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">Renderlight Studios</h1>
-    <p class="text-lg md:text-xl text-zinc-300 max-w-2xl mb-6">We're a team of indie creators crafting original animated series, short films, and weird creative experiments.</p>
-    <a href="#shows" class="bg-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-full text-white text-lg" id="watchShowsBtn">Watch Our Shows</a>
-   <br></br>
-    <a href="https://www.redbubble.com/people/coolsillydesign/shop?artistUserName=coolsillydesign&asc=u&collections=4312731" class="bg-gray-500 hover:bg-gray-600 transition px-6 py-3 rounded-full text-white text-lg" id="watchShowsBtn" target="_blank">Studio Merch</a>
+<body class="bg-zinc-950 text-white font-sans">
+
+  <!-- Fixed Banner -->
+  <div class="fixed top-0 left-0 w-full bg-indigo-600 text-white text-center py-2 z-50 text-sm md:text-base">
+    🚨 Some new studio merch just dropped! 👉
+    <a href="https://www.redbubble.com/people/coolsillydesign/shop?artistUserName=coolsillydesign&asc=u&collections=4312731"
+       target="_blank" class="underline font-semibold">Check it out</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6 relative pt-20">
+
+    <h1 class="text-5xl md:text-6xl font-bold tracking-wide mb-4">Renderlight Studios</h1>
+    <p class="text-zinc-400 max-w-2xl mb-6 text-lg md:text-xl">
+      A collective of weird indie animators making emotional, surreal, and ridiculous shows.
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="#shows" class="bg-zinc-800 border-2 border-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-none text-lg font-medium angled">Watch Our Shows</a>
+      <a href="https://www.redbubble.com/people/coolsillydesign/shop?artistUserName=coolsillydesign&asc=u&collections=4312731"
+         target="_blank"
+         class="bg-zinc-700 hover:bg-zinc-600 transition px-6 py-3 rounded-none text-lg font-medium angled">
+         Studio Merch
+      </a>
+    </div>
   </section>
 
-  <!-- About -->
-  <section class="bg-zinc-800 py-16 px-6" id="about">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-semibold mb-4">Who We Are</h2>
-      <p class="text-zinc-300 text-lg">
-        Renderlight studios are an indie animation collective. We create surreal, emotional, and sometimes ridiculous animated stories with a decently sized team.
+  <!-- About Section -->
+  <section class="bg-zinc-900 angled px-6 py-20" id="about">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-4 tracking-tight">Who We Are</h2>
+      <p class="text-zinc-400 text-lg">
+        Renderlight Studios is an indie animation studio creating bold, stylized content through collaboration and chaos.
       </p>
     </div>
   </section>
 
   <!-- Shows -->
-  <section class="py-16 px-6 bg-zinc-900" id="shows">
+  <section class="py-20 bg-zinc-950 px-6" id="shows">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-semibold text-center mb-12">Our Shows</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <!-- Show 1 -->
-        <a href="https://renderlight-studios.github.io/renderlight/canihavesomecake.html" class="bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-[1.02]">
-          <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/image.png" alt="can i have some cake image" class="w-full h-48 object-cover"> 
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">can i have some cake</h3>
-            <p class="text-zinc-300 text-sm"></p>
+        <a href="https://renderlight-studios.github.io/renderlight/canihavesomecake.html" class="bg-zinc-800 rounded-lg overflow-hidden hover:shadow-xl transition hover:scale-[1.02] border border-zinc-700">
+          <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/image.png" alt="can i have some cake image" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-semibold">can i have some cake</h3>
           </div>
         </a>
 
         <!-- Show 2 -->
-        <a href="https://renderlight-studios.github.io/renderlight/manfamily.html" class="bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-[1.02]">
-          <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/48B39F86-C126-4065-A93D-9463D756A66A.jpg" alt="can i have some cake image" class="w-full h-48 object-cover"> 
-          <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">The Man Family</h3>
-            <p class="text-zinc-300 text-sm"></p>
+        <a href="https://renderlight-studios.github.io/renderlight/manfamily.html" class="bg-zinc-800 rounded-lg overflow-hidden hover:shadow-xl transition hover:scale-[1.02] border border-zinc-700">
+          <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/48B39F86-C126-4065-A93D-9463D756A66A.jpg" alt="The Man Family image" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-semibold">The Man Family</h3>
           </div>
         </a>
       </div>
@@ -59,29 +76,28 @@
   </section>
 
   <!-- Join -->
-  <section class="py-20 bg-indigo-600 text-white text-center px-6" id="join">
+  <section class="bg-indigo-600 py-20 px-6 text-white text-center angled" id="join">
     <h2 class="text-4xl font-semibold mb-4">Join the Studio</h2>
     <p class="max-w-xl mx-auto text-lg mb-6">
-      We're always looking for animators, storyboarders, writers, musicians, chaotic creatives, and more to build something new. Want in?
+      Want to be part of the weirdness? We’re always looking for animators, writers, musicians & oddball visionaries.
     </p>
-    <a href="https://discord.gg/qbVC4vtV62" target="_blank" class="bg-white text-indigo-600 font-bold py-3 px-6 rounded-full hover:bg-zinc-200 transition">Join Our Discord</a>
+    <a href="https://discord.gg/qbVC4vtV62" target="_blank" class="bg-white text-indigo-600 font-bold py-3 px-6 hover:bg-zinc-200 transition angled">Join Our Discord</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-zinc-900 py-6 text-center text-zinc-500 text-sm">
+  <footer class="bg-zinc-950 py-6 text-center text-zinc-500 text-sm">
     © 2025 Renderlight Studios. All rights reserved.
   </footer>
 
   <script>
-    // Smooth scroll for the "Watch Our Shows" button
-    document.getElementById('watchShowsBtn').addEventListener('click', function(e) {
+    document.getElementById('watchShowsBtn')?.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      target.scrollIntoView({
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     });
   </script>
+
 </body>
 </html>
