@@ -5,49 +5,68 @@
   <title>can i have some cake | Renderlight Studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .angled {
+      clip-path: polygon(0% 0%, 100% 8%, 100% 92%, 0% 100%);
+    }
+  </style>
 </head>
-<body class="bg-zinc-900 text-white font-sans">
+<body class="bg-zinc-950 text-white font-sans">
+
   <!-- Navigation -->
-  <nav class="py-4 px-6 bg-zinc-800">
+  <nav class="py-4 px-6 bg-zinc-900 border-b border-zinc-800">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <a href="https://renderlight-studios.github.io/renderlight/" class="text-xl font-bold">Renderlight Studios</a>
-      <a href="https://renderlight-studios.github.io/renderlight/#shows" class="text-zinc-300 hover:text-white">Back to Shows</a>
+      <a href="https://renderlight-studios.github.io/renderlight/" class="text-xl font-bold tracking-wide">Renderlight Studios</a>
+      <a href="https://renderlight-studios.github.io/renderlight/#shows" class="text-zinc-400 hover:text-white transition">Back to Shows</a>
     </div>
   </nav>
 
   <!-- Show Header -->
-  <section class="py-16 px-6">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+  <section class="py-20 px-6 angled">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
       <div class="md:w-1/2">
-        <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/image.png" alt="can i have some cake" class="rounded-2xl w-full">
+        <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlightweb/refs/heads/main/assets/image.png" alt="can i have some cake" class="w-full border-4 border-indigo-500 shadow-lg">
       </div>
       <div class="md:w-1/2">
-        <h1 class="text-4xl font-bold mb-4">can i have some cake</h1>
-        <p class="text-zinc-300 mb-6">A surreal animated short about desires, dreams, and of course... cake.</p>
+                <h1 class="text-5xl font-bold mb-4 tracking-tight">can i have some cake</h1>
+        <p class="text-zinc-400 mb-6 text-lg">
+          A surreal animated short about desires, dreams, and of course... cake.
+        </p>
         <div class="flex flex-wrap gap-4">
-          <a href="https://www.youtube.com/watch?v=R0bwAWIAMGw&ab_channel=RenderlightStudios" target="_blank" class="bg-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-full text-white text-lg">Watch Now</a>
-          <a href="https://www.redbubble.com/people/coolsillydesign/shop?artistUserName=coolsillydesign&asc=u&collections=4312640" class="bg-zinc-700 hover:bg-zinc-600 transition px-6 py-3 rounded-full text-white text-lg" target="_blank">View Merch</a>
+          <a href="https://www.youtube.com/watch?v=R0bwAWIAMGw&ab_channel=RenderlightStudios"
+             target="_blank"
+             class="bg-indigo-600 hover:bg-indigo-700 transition px-6 py-3 text-white font-medium angled">
+             Watch Now
+          </a>
+          <a href="https://www.redbubble.com/people/coolsillydesign/shop?artistUserName=coolsillydesign&asc=u&collections=4312640"
+             class="bg-zinc-700 hover:bg-zinc-600 transition px-6 py-3 text-white font-medium angled"
+             target="_blank">
+             View Merch
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About the Show -->
-  <section class="py-16 px-6 bg-zinc-800">
+  <section class="bg-zinc-900 py-20 px-6 angled">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold mb-6">About the Show</h2>
-      <p class="text-zinc-300 mb-4">
-        "can i have some cake" is a surreal animated short about.. cake. 
+      <h2 class="text-3xl font-semibold mb-6 tracking-wide">About the Show</h2>
+      <p class="text-zinc-400 mb-4">
+        <em>“can i have some cake”</em> is a surreal animated short about... cake.
       </p>
-      <p class="text-zinc-300">
-        Created by Lazer Kat
-      </p>
+      <p class="text-zinc-400">Created by Lazer Kat</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-zinc-900 py-6 text-center text-zinc-500 text-sm">
+  <footer class="bg-zinc-950 py-6 text-center text-zinc-500 text-sm">
     © 2025 Renderlight Studios. All rights reserved.
   </footer>
+
 </body>
 </html>
