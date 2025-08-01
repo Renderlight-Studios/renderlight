@@ -14,9 +14,28 @@
     .angled {
       clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
     }
+    
+    .studio-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    
+    .studio-icon:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body class="bg-zinc-950 text-white font-sans">
+
+  <!-- Studio Icon -->
+  <a href="#" class="studio-icon">
+    <img src="https://raw.githubusercontent.com/Renderlight-Studios/renderlight/refs/heads/main/lightmclightface.png" alt="Renderlight Studios Icon" class="w-full h-full">
+  </a>
 
   <!-- Fixed Banner -->
   <div class="fixed top-0 left-0 w-full bg-indigo-600 text-white text-center py-2 z-50 text-sm md:text-base">
@@ -81,7 +100,7 @@
   <section class="bg-indigo-600 py-20 px-6 text-white text-center angled" id="join">
     <h2 class="text-4xl font-semibold mb-4">Join the Studio</h2>
     <p class="max-w-xl mx-auto text-lg mb-6">
-      Want to be part of the weirdness? We’re always looking for animators, writers, musicians & oddball visionaries.
+      Want to be part of the weirdness? We're always looking for animators, writers, musicians & oddball visionaries.
     </p>
     <a href="https://discord.gg/qbVC4vtV62" target="_blank" class="bg-white text-indigo-600 font-bold py-3 px-6 hover:bg-zinc-200 transition angled">Join Our Discord</a>
   </section>
