@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Renderlight Studios</title>
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Renderlight-Studios/renderlight/refs/heads/main/pageicon.ico">
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Renderlight-Studios/renderlight/refs/heads/main/pageicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -17,7 +17,7 @@
     
     .studio-icon {
       position: fixed;
-      top: 50px;  /* Changed from 10px to 70px */
+      top: 50px;
       left: 10px;
       width: 40px;
       height: 40px;
@@ -46,13 +46,11 @@
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col justify-center items-center text-center px-6 relative pt-20">
-
     <h1 class="text-5xl md:text-6xl font-bold tracking-wide mb-4">Renderlight Studios</h1>
     <p class="text-zinc-400 max-w-2xl mb-6 text-lg md:text-xl">
       A collective of weird indie animators making emotional, surreal, and ridiculous shows.
     </p>
     <div class="flex flex-wrap gap-4 justify-center">
-      
       <a href="#shows" class="bg-zinc-800 border-2 border-indigo-500 hover:bg-indigo-600 transition px-6 py-3 rounded-none text-lg font-medium angled">Watch Our Shows</a>
       <a href="https://www.youtube.com/@RenderlightStudios?sub_confirmation=1" class="bg-zinc-800 border-2 border-red-500 hover:bg-red-600 transition px-6 py-3 rounded-none text-lg font-medium angled">Our Channel</a>
       <a href="https://renderlight-studios.github.io/renderlight/donate.html" class="bg-zinc-800 border-2 border-yellow-500 hover:bg-yellow-600 transition px-6 py-3 rounded-none text-lg font-medium angled">Donate</a>
@@ -100,11 +98,19 @@
 
   <!-- Join -->
   <section class="bg-indigo-600 py-20 px-6 text-white text-center angled" id="join">
-    <h2 class="text-4xl font-semibold mb-4">Join the Studio</h2>
-    <p class="max-w-xl mx-auto text-lg mb-6">
+    <h2 class="text-4xl font-semibold mb-8">Join the Studio</h2>
+    <p class="max-w-xl mx-auto text-lg mb-8">
       Want to be part of the weirdness? We're always looking for animators, writers, musicians & oddball visionaries.
     </p>
-    <a href="https://discord.gg/qbVC4vtV62" target="_blank" class="bg-white text-indigo-600 font-bold py-3 px-6 hover:bg-zinc-200 transition angled">Join Our Discord</a>
+    <!-- Discord Widget Embed -->
+    <div class="flex justify-center">
+      <iframe src="https://discord.com/widget?id=1385209018859126917&theme=dark"
+              width="350" height="500"
+              allowtransparency="true"
+              frameborder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </div>
   </section>
 
   <!-- Footer -->
